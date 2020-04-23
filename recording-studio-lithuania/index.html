@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="lt-LT">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<meta name="format-detection" content="telephone=no">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="dns-prefetch" href="//use.fontawesome.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" id="wp-block-library-css" href="https://github.com/karolis1975/audioklip/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="https://github.com/karolis1975/audioklip/wp-content/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-name-css" href="https://github.com/karolis1975/audioklip/wp-content/themes/audioklip/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="style-name2-css" href="https://github.com/karolis1975/audioklip/wp-content/themes/audioklip/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-official-css" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" type="text/css" media="all" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+<link rel="stylesheet" id="font-awesome-official-v4shim-css" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css" type="text/css" media="all" integrity="sha384-/7iOrVBege33/9vHFYEtviVcxjUsNCqyeMnlW/Ms+PH8uRdFkKFmqf9CbVAN0Qef" crossorigin="anonymous">
+<style id="font-awesome-official-v4shim-inline-css" type="text/css">
+@font-face {
+font-family: "FontAwesome";
+src: url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+src: url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+src: url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+</style>
+<script type="text/javascript" src="https://github.com/karolis1975/audioklip/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://github.com/karolis1975/audioklip/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+
+
+
+
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1931 wp-custom-logo">
+    <div class="header">
+    <div class="nav">
+    <div class="logo"><a href="https://github.com/karolis1975/audioklip/" class="custom-logo-link" rel="home"><img width="250" height="89" src="https://github.com/karolis1975/audioklip/wp-content/uploads/2020/03/cropped-audioklip-1.png" class="custom-logo" alt="Visos įgarsinimo paslaugos – www.audioklip.lt"></a></div>
+      <div class="menu"><ul id="menu-teikiamos-paslaugos" class="menu"><li id="menu-item-2120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2120"><a href="https://github.com/karolis1975/audioklip/">Pradžia</a></li>
+<li id="menu-item-2117" class="service_sub menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2117"><a href="https://github.com/karolis1975/audioklip/paslaugos/">Paslaugos</a>
+<ul class="sub-menu">
+	<li id="menu-item-2124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2124"><a href="https://github.com/karolis1975/audioklip/audio-reklamos-kurimas/">Audio reklamos kūrimas</a></li>
+	<li id="menu-item-2126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2126"><a href="https://github.com/karolis1975/audioklip/vaizdo-reklamos-igarsinimas/">Vaizdo reklamos įgarsinimas</a></li>
+	<li id="menu-item-2125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2125"><a href="https://github.com/karolis1975/audioklip/autoatsakiklio-igarsinimas/">Autoatsakiklio įgarsinimas</a></li>
+	<li id="menu-item-2127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127"><a href="https://github.com/karolis1975/audioklip/igarsinimo-paslaugos-kitomis-kalbomis/">Įgarsinimas kitomis kalbomis</a></li>
+	<li id="menu-item-2123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2123"><a href="https://github.com/karolis1975/audioklip/vaizdo-klipu-subtitravimas/">Vaizdo klipų subtitravimas</a></li>
+</ul>
+</li>
+<li id="menu-item-2118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2118"><a href="https://github.com/karolis1975/audioklip/paslaug___kainos_/">Įkainiai</a></li>
+<li id="menu-item-2121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2121"><a href="https://github.com/karolis1975/audioklip/diktoriai/">Diktoriai</a></li>
+<li id="menu-item-2119" class="service_sub menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2119"><a href="https://github.com/karolis1975/audioklip/atsiskaitymas_-html/">Informacija</a>
+<ul class="sub-menu">
+	<li id="menu-item-2122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2122"><a href="https://github.com/karolis1975/audioklip/lojaliems-klientams/">Lojalumas</a></li>
+</ul>
+</li>
+<li id="menu-item-2115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2115"><a href="#section1">Kontaktai</a></li>
+</ul></div>      <div class="mobileMenu"><ul id="menu-teikiamos-paslaugos-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2120"><a href="https://github.com/karolis1975/audioklip/">Pradžia</a></li>
+<li class="service_sub menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2117"><a href="https://github.com/karolis1975/audioklip/paslaugos/">Paslaugos</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2124"><a href="https://github.com/karolis1975/audioklip/audio-reklamos-kurimas/">Audio reklamos kūrimas</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2126"><a href="https://github.com/karolis1975/audioklip/vaizdo-reklamos-igarsinimas/">Vaizdo reklamos įgarsinimas</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2125"><a href="https://github.com/karolis1975/audioklip/autoatsakiklio-igarsinimas/">Autoatsakiklio įgarsinimas</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2127"><a href="https://github.com/karolis1975/audioklip/igarsinimo-paslaugos-kitomis-kalbomis/">Įgarsinimas kitomis kalbomis</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2123"><a href="https://github.com/karolis1975/audioklip/vaizdo-klipu-subtitravimas/">Vaizdo klipų subtitravimas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2118"><a href="https://github.com/karolis1975/audioklip/paslaug___kainos_/">Įkainiai</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2121"><a href="https://github.com/karolis1975/audioklip/diktoriai/">Diktoriai</a></li>
+<li class="service_sub menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2119"><a href="https://github.com/karolis1975/audioklip/atsiskaitymas_-html/">Informacija</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2122"><a href="https://github.com/karolis1975/audioklip/lojaliems-klientams/">Lojalumas</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2115"><a href="#section1">Kontaktai</a></li>
+</ul></div>    </div>
+    </div>
+
+    <div class="content">
+
+    
+    <div class="pageContentTitle">
+    <h2>recording studio lithuania</h2> </div>
+	<div class="container pageContent">
+    <p><span style="font-size: 12pt;"><strong><span style="font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">About us:</span></strong></span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Audio clips – the most effective way to become visible…</span></p>
+<h1><strong><a href="https://www.audioklip.lt/wp-contents/uploads/2014/03/rodykl%C4%97.jpg"><img class="alignnone size-full wp-image-1014" src="https://www.audioklip.lt/wp-contents/uploads/2014/03/rodykl%C4%97.jpg" alt="radijo klipų kūrimas" width="227" height="115"></a></strong></h1>
+<p><span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;"> sound recording services producing radio clips</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Communication between the client and the entrepreneur is done through effective advertising! Audio clips – the cheapest, highest quality and most effective way to be noticed!</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We design, sound, install and provide you with a fresh product.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Why Audio Advertising?</span></p>
+<blockquote><p><span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Audio Advertising – The Cheapest Way To Become Hearing!</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Audio advertising guarantees exclusivity! What kind of advertising is good? Original, informative and eye-catching.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">The spread of this advertising is particularly wide: TV, conferences, supermarkets, radio, fairs and other places where the power of word is strong.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Audio advertising has a very strong influence. Once you hear it, you want to repeat it.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Functional Duration. Audio commercials last between 15 and 30 seconds. This is the time when all the necessary information is provided, but does not bother the listener.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Audio advertising develops the listener’s imagination. Each time, depending on his mood, he will hear information from a different angle.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Advertising helps to create an uninterrupted relationship between the entrepreneur and the listener. Communication in business is essential.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">3,2,1 and advertising reaches listeners! This is the most effective way to spread the message.</span></p></blockquote>
+<p><span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Become more popular and easier to discover!</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Why trust us? Because we know what we are doing!</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We provide our services at competitive prices. The price of quality audio advertising starts from 40 EUR.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We carry out the work expeditiously. Customer time is important to us.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We assure you that we will improve the result until the customer is satisfied.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Our team consists of different specialists who guarantee that their quality of work will not disappoint.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Creatives are original and informative.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">If necessary, invoices are issued.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Useful information: Click here</span></p>
+<blockquote><p><span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Contacts:</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Skype: audio_advertising</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Email: romas.tamosevicius@gmail.com</span></p></blockquote>
+<p><span style="font-size: 12pt;"><strong><span style="font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Voice over recording services: </span></strong></span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;"><strong>production of radio advertising:</strong></span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Audio advertising on the radio is a great way to promote your products or services</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Radio advertising is very effective advertising that reaches and affects a large number of people. Radio is even the second most popular medium in Lithuania – as many as two thirds of Lithuanians listen to the radio and commercials broadcast on it.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">However, it is the quality of audio advertising that determines whether the listener will buy the services. Audible information in advertising must be graciously and uniquely conveyed to the listener, so creating audio clips is very important – the number of sales depends on the sound of the advertising clip.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Quality audio advertising needs to be concise, clear and well-worded, and then convince the buyer that it is worth buying one or another product or service.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Often, companies make the big mistake of putting audio advertising on the radio station itself. While people who work on radio are often professionals in their field, they are not professional advertising professionals. Audio clip production and sound recording services should be undertaken by professionals with extensive experience in the field.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We are engaged in the production of a radio audio clip – we produce the highest quality audio for you:</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We record audio clips professionally – they are clear and accurate.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">The audio quality is of the highest quality – no extraneous sounds or noises are heard.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We take into consideration the customer’s needs and wishes</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We ensure the best quality and sound of the recording so that your radio advertising is effective and efficient.</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;"><strong>video advertising sound services</strong></span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Social media is a huge part of everyday life – it is a means of communication where people share their hobbies, news and knowledge.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">However, social networking is also a great place for advertising. One of the most popular ways to get people’s attention on social media is video.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Whether for commercial or entertainment purposes, your video quality must be excellent in order to attract as many viewers or buyers as possible. Viewers may lose interest in the video when they cannot understand the information conveyed in the video clip or the extraneous sounds they hear disturb the listener.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We provide a variety of video recording and voice over recording services. We record different types of clips:</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Facebook Video Clip Audio Services</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Youtube Video Advertising Audio</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Recording a TV video clip</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Sound recording of the advertisement</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Framed voice</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Video advertising sound</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We also provide other video or text sound services.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Video audio services are highly dependent on the client’s preference – we can perform video audio services for various social networks such as Youtube, Facebook, Instagram, Twitter and other soc. networks.</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;"><strong>telephone answering service voice over </strong></span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">The best way to effectively handle incoming calls is to use telephone answering machines</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Ringing the answering machine ensures that no customer calls are missed.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Calls are distributed to the agents responsible for certain topics, thus avoiding time wastage and providing information faster and more efficiently.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Telephone answering machines help to create telebanking, telemarketing, automated card or bill service, thus improving the quality of service.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We provide answering machine (IVR) and answering machine services.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We have professional equipment and many years of experience in audio commercials, audio clips, autoresponders. We select the most appropriate voices for announcers and ensure the audio is of the highest quality – without any interference or other extraneous sounds.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We carry out answering machines for private and corporate phones.</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Creating autoresponders includes:</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Automatic voice greeting</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Automatic notifications</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">Information messages (for example, account balancing, card expiration)</span><br>
+<span style="font-size: 10pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #000000;">We take into account the wishes and needs of the customer, and strive to achieve the best possible results and ensure the highest quality of answering machine recording.</span><br>
+<span style="color: #000000;"><strong><span style="font-size: 12pt; font-family: Tahoma, Arial, Helvetica, sans-serif;">audio services in other languages</span></strong></span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000;">Social media is an integral part of everyone’s life. People spend a lot of time watching videos or reading articles on platforms like Youtube, Twitter, Instragram or Facebook. This makes social networks a great platform for advertising.</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000;">One of the best promotional tools is video. Video clips attract a lot of attention and potential buyers, so the sound of video and audio commercials is important for every successful advertisement.</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000;">However, for video advertising to be flawless, the video quality must be excellent. Often people may lose interest if the video contains obscure extraneous sounds or if the words are difficult to understand.</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000;">In addition, if you want to attract foreign buyers, you need to take care of the audio quality of your video ads in foreign languages.</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000;">We provide TV commercials, audio commercials, Youtube, Facebook and other social media advertising services. We conduct advertising in various foreign languages:</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000;">Lithuanian, Latvian, Estonian, Italian, Spanish, French, German, Latvian, Portuguese, Czech, Polish, Brazilian, Bulgarian, Chinese, Danish, French, Greek, Spanish, Turkish, Chinese, Arabic, Australian, Swedish, Ukrainian, Norwegian, Serbian, Romunu, Uzbek, and many other languages.</span><br>
+<span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000;">Sound clip production services depend on the wishes of the client – we can create advertisements for various social networks. We only sound with the text provided by the client.</span><br>
+ <br>
+<span style="color: #000000;"><span style="font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 10pt;"><strong>click here for our speaker base</strong></span>:</span> <a href="http://balsai.audioklip.lt/balsai/">http://balsai.audioklip.lt/balsai/</a><br>
+ <br>
+<span style="font-size: 1pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #ffffff;">voice recording studio lithuania, recording studio lithuania, banner creation, banner production, banner clip, banner clip creation, banner clip creation, banner clip sounding, banner clip streaming, banner services, advertising services, advertising services, clip audio advertising, audio advertising, audio advertising, audio advertising production, audio advertising production, audio advertising production, audio advertising production, audio advertising production, audio advertising production, audio advertising production m, advertising audio, clip production, audio advertisement production , audio clip production, recording studio lithuania, radio advertising, radio advertising production, sound recording, advertising clips, advertising audio clips, advertising audio clips, advertising audio clips, advertising audio clips, audio visual advertising, audio visual advertising production, audio visual advertising production clips , advertising audio clips, commercial audio clips, commercial audio clips, audio visual advertising, audio visual advertising production, audio visual advertising production, voip sounding, framed voice, surround voice, VO recording, recording studio lithuania, studio recording lithuania, baltic voice recording VO voices, voicemail, voicemail voicemail, autoresponder, voicemail voicemail, commercials, promotional audio clips, promotional audio clips, promotional audio clips, promotional audio clips, audio visual advertising, audio visual advertisement creation, audio visual advertisement creation, voip voice over, voice over, over voice, VO recording, VO recording, VO sounding, IVR, IVR sounding, IVR sounding, iv sounding, iv sounding services, iv services , ivr transponder, ivr audio clip, ivr sounding, firewall, firewall sounding, video clip firewall sounding, firewall male voice, firewall voice services, firewall voice, firewall sounding, radio advertising production, radio advertising production, promotional audio clip creation, promotional audio clip, banner audio clip, banner audio creation, service sound recording, service sound recording, sound recording, video sound recording, video sound recording service, video clip sounding, video clip sounding, video clip sounding, tv clip sounding, tv video dubbing, advertising duplication services , audio dubbing, answering machine sounding, telephone answering machine sounding, telephone answering machine sounding, sound recording, radio clip production, audio clip production, audio studio production, recording studio, framed clip production, event clips, event audio, shai, audio commercials, audio visual commercials, audio, video production, radio, audio fm commercials, radio commercials, audio commercials, audio recording, voice recording, audio recording studio, clip clips, voice clips, audio video commercials, radio clips , effects, clip editing, professional clip production, call sign, jingles, advertising order,</span><br>
+<span style="font-size: 1pt; font-family: Tahoma, Arial, Helvetica, sans-serif; color: #ffffff;">On-air advertising, On-air advertising, On-air radio clips, Audio advertising, Audio clips, Radio advertising, Radio advertising, Audio services, Advertising, Radio advertising, Video production, Video clip production, Sound recording, Movie dubbing, Movie sound recording, Radio clip production, audio clips, advertising services, sound recording, voice over, voice recording, recording studio, advertising production,</span></p>
+</div>
+<footer>
+    <div class="containeris">
+<div class="nav1"><ul id="menu-menu-2" class="menu"><li id="menu-item-2137" class="footer-logo menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2137"><a href="https://github.com/karolis1975/audioklip/"><img src="https://github.com/karolis1975/audioklip/wp-content/uploads/2020/03/audioklip.png"></a></li>
+<li id="menu-item-2128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2128"><a href="https://github.com/karolis1975/audioklip/lojaliems-klientams/">Lojalumas</a></li>
+<li id="menu-item-2129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2129"><a href="https://github.com/karolis1975/audioklip/atsiskaitymas_-html/">Naudinga informacija</a></li>
+<li id="menu-item-2130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130"><a href="https://github.com/karolis1975/audioklip/diktoriai/">Diktoriai</a></li>
+<li id="menu-item-2116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2116"><a href="#section1">Kontaktai</a></li>
+</ul></div><div class="nav2"><ul id="menu-menu-3" class="menu"><li id="menu-item-2134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2134"><a href="https://github.com/karolis1975/audioklip/paslaugos/">Teikiamos paslaugos</a></li>
+<li id="menu-item-2131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2131"><a href="https://github.com/karolis1975/audioklip/audio-reklamos-kurimas/">Audio reklamos kūrimas</a></li>
+<li id="menu-item-2136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2136"><a href="https://github.com/karolis1975/audioklip/vaizdo-reklamos-igarsinimas/">Vaizdo reklamos įgarsinimas</a></li>
+<li id="menu-item-2132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2132"><a href="https://github.com/karolis1975/audioklip/autoatsakiklio-igarsinimas/">Autoatsakiklio įgarsinimas</a></li>
+<li id="menu-item-2135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2135"><a href="https://github.com/karolis1975/audioklip/vaizdo-klipu-subtitravimas/">Vaizdo klipų subtitravimas</a></li>
+<li id="menu-item-2133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2133"><a href="https://github.com/karolis1975/audioklip/igarsinimo-paslaugos-kitomis-kalbomis/">Įgarsinimas kitomis kalbomis</a></li>
+</ul></div></div>
+<div class="words">
+  voice recording studio lithuania , recording studio lithuania , reklaminio klipo kurimas , reklaminio klipo kurimas , reklaminio klipo igarsinimas , reklaminio klipo igarsinimas , reklamos klipo kurimas , reklamos klipo igarsinimas , reklamos klipo igarsinimas , reklaminiai klipai , reklamos paslaugos , reklamines paslaugos , reklama paslaugos , klipu igarsinimo paslaugos , audio reklama , garso reklama , garso reklamos kurimas , garso reklamos gamyba , audio reklamos kurimas , audio reklamos gamyba , audio reklamos kūrimas , garso reklamos kūrimas , garso reklamos gamyba m ,  reklama audio , klipu gamyba , klipu igarsinimas , audio reklamos kurimas , garso klipu kurimas , recording studio lithuania , radijo reklama , radijo reklamos kurimas , igarsinimas , reklamos klipai , reklaminiai garso klipai , reklaminiai audio klipai , reklamos garso klipai , reklamos audio klipai , audio vizualine reklama , audio vizualines reklamos kurimas , audiovizualine reklamos kurimas klipai , reklaminiai audio klipai , reklamos garso klipai , reklamos audio klipai , audio vizualine reklama , audio vizualines reklamos kurimas , audiovizualine reklamos kurimas , voip igarsinimas , uzkadrinis balsas , užkadrinis balsas , VO recording , recording studio lietuva , studio recording lithuania , voice recording studio lithuania , baltic voice recording VO igarsinimai , vo igarsinimas , atsakiklio igarsinimas , autoatsakikliai , autoatsakikliu igarsinimas , reklamos klipai , reklaminiai garso klipai , reklaminiai audio klipai , reklamos garso klipai , reklamos audio klipai , audio vizualine reklama , audio vizualines reklamos kurimas , audiovizualine reklamos kurimas , voip igarsinimas , uzkadrinis balsas , užkadrinis balsas , VO recording , recording studio lietuva , studio recording lithuania , voice recording studio lithuania , baltic voice recording VO igarsinimai , vo igarsinimas , IVR , IVR garsinimas , IVR igarsinimas , ivr igarsinimas , ivr igarsinimo paslaugos , ivr paslaugos , ivr atsakiklis , ivr audio klipas , IVR igarsinimas , uzkardinis balsas , igarsinimas uzkardinis , vaizdo klipo uzkardinis igarsinimas , uzkardinis vyriskas balsas , uzkardinio balso paslaugos , užkardinis balsas , užkardinis igarsinimas , radio reklamos kūrimas ,  radio reklamos gamyba , reklaminio audio klipo kūrimas , reklaminis audio klipas , reklaminis garso klipas , reklaminio audio klipo kūrimas ,  paslaugos įgarsinimo , paslauga įgarsinimo , igarsinimas , vaizdo įgarsinimas , vaizdo klipo įgarsinimo paslaugos , vaizdo klipo įgarsinimas , video klipo įgarsinimas , video klipų įgarsinimas , tv klipo įgarsinimas , tv klipo dubliavimas , reklamos dubliavimo paslaugos , įgarsinimo dubliavimas , atsakiklių įgarsinimas , telefoninio atsakiklio įgarsinimas , telefono atsakiklio igarsinimas , igarsinimas , radijo klipu gamyba , audio klipu gamyba , audio klipu gaminimas , irasu studija , uzkadriniu klipu gamyba , klipai renginiams , renginiu klipai , renginiu garso irašai , audio reklama , audio vizualine reklama , irasai , irasu gamyba , radijo irasai , fm reklama , radijo reklamos kurimas , audio reklamos kurimas , igarsinimu kurimas , balso irašai , garsu irašu studija , užkadriniai klipai , užkadrinis balsas , audio video reklama , radijo klipai , efektai , klipu montavimas , profesionaliu klipu gamyba , šaukiniai , dzinglai , reklamos užsakymas ,
+reklama radijo eteryje , reklama eteryje , radijo klipai eteryje , garso reklama , garsiniai klipai , reklama radijo stotyse , reklama radijo stotyje , audio paslaugos , reklama , radijo reklama , video gamyba , video klipu gamyba , užgarsinimas , filmu dubliavimas , filmu igarsinimas , radijo klipu gamyba , audio klipai , reklamos paslaugos , igarsinimas , voice over , balso irašymas , irašu studija , reklamos gamyba ,
+</div>
+</footer>
+
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/github.com\/karolis1975\/audioklip\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://github.com/karolis1975/audioklip/wp-content/plugins/contact-form-7/includes/js/scripts.js"></script>
+<script type="text/javascript" src="https://github.com/karolis1975/audioklip/wp-content/themes/audioklip/js/scroll.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+var hey_lt_w = "", hey_lt_h = "", _hey_lt_c = "";
+//-->
+</script>
+<script language="javascript1.2" type="text/javascript">
+<!--
+hey_lt_w = screen.width; hey_lt_h = screen.height; _hey_lt_c = navigator.appName.indexOf("Microsoft") >= 0 ? screen.colorDepth : screen.pixelDepth;
+//-->
+</script>
+<script language="javascript" type="text/javascript">
+<!--
+document.write("<a target='_blank' href='https://www.hey.lt/details.php?id=audioklip' style='display:none'><img width='88' height='31' border='0' src='https://www.hey.lt/count.php?id=audioklip&width=" + hey_lt_w + "&height=" + hey_lt_h + "&color=" + _hey_lt_c + "&referer=" + escape(document.referrer) + "' alt='Hey.lt - Nemokamas lankytojų skaitliukas'><\/a>"); rel="nofollow"
+//-->
+</script>
+<noscript>
+<a target="_blank" href="https://www.hey.lt/details.php?id=audioklip">  rel="nofollow" <img width="88" height="31" border="0" src="https://www.hey.lt/count.php?id=audioklip" alt="Hey.lt - Nemokamas lankytojų skaitliukas"></a>
+</noscript>
+
+<script> 
+  const menu = document.querySelectorAll(".mobileMenu")[0];
+  const menuUl = menu.getElementsByTagName("ul")[0];
+  const subMenu = menuUl.querySelectorAll(".service_sub");
+  const bodyBlack = document.createElement("div");
+  const body = document.getElementsByTagName("body")[0];
+  const html = document.getElementsByTagName('html')[0];
+  let chat = null;
+setTimeout(xd, 1000);
+function xd(){
+  chat = document.querySelectorAll('[title="chat widget"]');
+}
+
+ for(let i = 0; i < subMenu.length; i++){
+  const arrow = document.createElement("div");
+  arrow.classList.add("arrow");
+  subMenu[i].appendChild(arrow);
+
+  subMenu[i].addEventListener("click", showSub);
+}
+function showSub(e){
+if(e.target.classList.contains("arrow")){
+	const subMenuList = e.target.parentElement.querySelectorAll(".sub-menu")[0];
+	if(!subMenuList.classList.contains("menuToggled")){
+	subMenuList.classList.add("menuToggled");
+	e.target.classList.add("rotateArrowDown");
+	e.target.classList.remove("rotateArrowUp");
+        }
+	else{
+	subMenuList.classList.remove("menuToggled");
+	e.target.classList.remove("rotateArrowDown");
+	e.target.classList.add("rotateArrowUp");
+        }
+}
+}
+
+  bodyBlack.classList.add("bodyBlack");
+  body.insertBefore(bodyBlack, body.firstChild);
+
+  for(let i = 0; i < 3; i++){
+    let menuLine = document.createElement("div");
+    menuLine.classList.add("menuLine");
+    menu.appendChild(menuLine);
+  }
+  const exitMenu = document.createElement("div");
+  exitMenu.classList.add("exitMenu");
+  for(let i = 0; i < 2; i++){
+    let exitMenuLine = document.createElement("div");
+    exitMenuLine.classList.add("exitMenuLine");
+    exitMenu.appendChild(exitMenuLine);
+  }
+  menuUl.insertBefore(exitMenu, menuUl.firstChild);
+  
+  exitMenu.addEventListener("click" ,function(){
+menuUl.style.right = "-250px";
+	for(let p = 0; p < chat.length; p++)
+	chat[p].style.visibility = "visible";
+    bodyBlack.style.display = "none";
+    html.classList.remove("stopScroll");
+  });
+ 	
+ 
+        menu.addEventListener("click", menuClick);
+    
+    function menuClick(e){  
+        if(e.target.classList.contains("mobileMenu") || e.target.classList.contains("menuLine")){
+        if(menuUl.style.right != "0px"){
+	for(let p = 0; p < chat.length; p++)
+	chat[p].style.visibility = "hidden";
+          menuUl.style.cssText = "right:0px !important";
+        bodyBlack.style.display = "block";
+        html.classList.add("stopScroll");
+
+        }
+        }
+    }
+</script>
+
+</body>
+</html>
