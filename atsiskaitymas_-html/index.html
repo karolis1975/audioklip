@@ -7,32 +7,11 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://code.jquery.com/jquery-2.2.0.min.js"
-      type="text/javascript"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <meta name="format-detection" content="telephone=no" />
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
       rel="stylesheet"
-    />
-    <link rel="dns-prefetch" href="//use.fontawesome.com" />
-    <link rel="dns-prefetch" href="//s.w.org" />
-    <link
-      rel="stylesheet"
-      id="wp-block-library-css"
-      href="../wp-includes/css/dist/block-library/style.min.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="contact-form-7-css"
-      href="../wp-content/plugins/contact-form-7/includes/css/styles.css"
-      type="text/css"
-      media="all"
     />
     <link
       rel="stylesheet"
@@ -50,80 +29,6 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      id="font-awesome-official-v4shim-css"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css"
-      type="text/css"
-      media="all"
-      integrity="sha384-/7iOrVBege33/9vHFYEtviVcxjUsNCqyeMnlW/Ms+PH8uRdFkKFmqf9CbVAN0Qef"
-      crossorigin="anonymous"
-    />
-    <style id="font-awesome-official-v4shim-inline-css" type="text/css">
-      @font-face {
-        font-family: "FontAwesome";
-        src: url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.eot"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.eot?#iefix")
-            format("embedded-opentype"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.woff2")
-            format("woff2"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.woff")
-            format("woff"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.ttf")
-            format("truetype"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-brands-400.svg#fontawesome")
-            format("svg");
-      }
-
-      @font-face {
-        font-family: "FontAwesome";
-        src: url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.eot"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.eot?#iefix")
-            format("embedded-opentype"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff2")
-            format("woff2"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.woff")
-            format("woff"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.ttf")
-            format("truetype"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-solid-900.svg#fontawesome")
-            format("svg");
-      }
-
-      @font-face {
-        font-family: "FontAwesome";
-        src: url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.eot"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.eot?#iefix")
-            format("embedded-opentype"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.woff2")
-            format("woff2"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.woff")
-            format("woff"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.ttf")
-            format("truetype"),
-          url("https://use.fontawesome.com/releases/v5.13.0/webfonts/fa-regular-400.svg#fontawesome")
-            format("svg");
-        unicode-range: U+F004-F005, U+F007, U+F017, U+F022, U+F024, U+F02E,
-          U+F03E, U+F044, U+F057-F059, U+F06E, U+F070, U+F075, U+F07B-F07C,
-          U+F080, U+F086, U+F089, U+F094, U+F09D, U+F0A0, U+F0A4-F0A7, U+F0C5,
-          U+F0C7-F0C8, U+F0E0, U+F0EB, U+F0F3, U+F0F8, U+F0FE, U+F111,
-          U+F118-F11A, U+F11C, U+F133, U+F144, U+F146, U+F14A, U+F14D-F14E,
-          U+F150-F152, U+F15B-F15C, U+F164-F165, U+F185-F186, U+F191-F192,
-          U+F1AD, U+F1C1-F1C9, U+F1CD, U+F1D8, U+F1E3, U+F1EA, U+F1F6, U+F1F9,
-          U+F20A, U+F247-F249, U+F24D, U+F254-F25B, U+F25D, U+F267, U+F271-F274,
-          U+F279, U+F28B, U+F28D, U+F2B5-F2B6, U+F2B9, U+F2BB, U+F2BD,
-          U+F2C1-F2C2, U+F2D0, U+F2D2, U+F2DC, U+F2ED, U+F328, U+F358-F35B,
-          U+F3A5, U+F3D1, U+F410, U+F4AD;
-      }
-    </style>
-    <script
-      type="text/javascript"
-      src="../wp-includes/js/jquery/jquery.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../wp-includes/js/jquery/jquery-migrate.min.js"
-    ></script>
   </head>
 
   <body class="page-template-default page page-id-61 wp-custom-logo">
@@ -527,52 +432,6 @@
         </div>
       </footer>
     </div>
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      var wpcf7 = {
-        apiSettings: {
-          root:
-            "https:\/\/github.com\/karolis1975\/audioklip\/wp-json\/contact-form-7\/v1",
-          namespace: "contact-form-7\/v1",
-        },
-      };
-      /* ]]> */
-    </script>
-    <script
-      type="text/javascript"
-      src="../wp-content/plugins/contact-form-7/includes/js/scripts.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="../wp-content/themes/audioklip/js/scroll.js"
-    ></script>
-    <script language="javascript" type="text/javascript">
-      <!--
-      var hey_lt_w = "", hey_lt_h = "", _hey_lt_c = "";
-      //-->
-    </script>
-    <script language="javascript1.2" type="text/javascript">
-      <!--
-      hey_lt_w = screen.width; hey_lt_h = screen.height; _hey_lt_c = navigator.appName.indexOf("Microsoft") >= 0 ? screen.colorDepth : screen.pixelDepth;
-      //-->
-    </script>
-    <script language="javascript" type="text/javascript">
-      <!--
-      document.write("<a target='_blank' href='https://www.hey.lt/details.php?id=audioklip' style='display:none'><img width='88' height='31' border='0' src='https://www.hey.lt/count.php?id=audioklip&width=" + hey_lt_w + "&height=" + hey_lt_h + "&color=" + _hey_lt_c + "&referer=" + escape(document.referrer) + "' alt='Hey.lt - Nemokamas lankytojų skaitliukas'><\/a>"); rel="nofollow"
-      //-->
-    </script>
-    <noscript>
-      <a target="_blank" href="https://www.hey.lt/details.php?id=audioklip">
-        rel="nofollow"
-        <img
-          width="88"
-          height="31"
-          border="0"
-          src="https://www.hey.lt/count.php?id=audioklip"
-          alt="Hey.lt - Nemokamas lankytojų skaitliukas"
-      /></a>
-    </noscript>
-
     <script>
       const menu = document.querySelectorAll(".mobileMenu")[0];
       const menuUl = menu.getElementsByTagName("ul")[0];
